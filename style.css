@@ -1,0 +1,215 @@
+/* Start Global rules*/
+:root {
+    --mainColor: #0000;
+    --section-background: #d2fdfa;
+    --btn-color: #1b1b1b;
+    --text-color: #0000;
+}
+
+.main-section {
+    text-align: center;
+    padding: 80px 0;
+}
+.main-section .main-title {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    position: relative;
+    display: inline-block;
+  
+   
+}
+.main-section .main-desc {
+ letter-spacing:0.25rem;
+ display: block;
+   margin-top: 1rem;
+}
+.main-section .main-title::after {
+    content:"";
+    position: absolute;
+    display: block;
+    height: 0.25rem;
+    width: 100%;
+    background-color: var(--btn-color);
+
+}
+.padding-TB{
+padding: 80px;
+}
+
+
+
+/* End Global rules*/
+
+
+/* Start Header  */
+.header-top{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.header-top .logo {
+    font-weight: bold;
+}
+.header-bottom .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navbar {
+    background-color: var(--section-background);
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* End Header  */
+
+/* Start Hero  */
+/* End Hero  */
+
+
+
+/* Start Shop  */
+.card img {
+    max-height: 40%;
+  
+}
+
+/* End Shop  */
+/* Start design  */
+.design {
+    background-color: var(--section-background);
+}
+/* End design  */
+
+
+/* Start Services  */
+.services .icon-holder {
+    height: 200px; /* for the number one be more taller */
+}
+.services .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.services .icon-holder .number {
+font-size: 9rem;
+color: #eff7fa;
+}
+
+/* End Services  */
+
+
+/* Start Products  */
+
+
+
+.products .image{
+    position: relative;
+}
+.products .btn {
+position: absolute;
+bottom: 5px;
+left: 8px;
+}
+
+@media screen and (min-width: 991px) {
+   .products .img-one {
+    max-height: 800px;
+} 
+
+    
+}
+
+
+/* End Products  */
+/* Start Features  */
+
+.features a.active {
+background-color: var(--section-background);
+padding: 5px 20px;
+border-radius: 5px;
+}
+.card-feat {
+    position: relative;
+}
+
+
+.card-feat .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.card-feat .box{
+    content: attr(data-work);
+    position: absolute;
+    background-color: aqua;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: .5s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+.card-feat .box:hover::before {
+    transform: translateX(0);
+} 
+
+
+/* End Features  */
+
+/*Start Subscribe */
+.subscribe {
+    background-color: var(--btn-color);
+}
+
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.subscribe input[type="text"]:focus {
+  outline: none;
+}
+.subscribe ::placeholder {
+    color: white;
+}
+.subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+    color: #fff;
+    
+}
+/*End Subscribe */
+/*Start Footer */
+.footer {
+    background-color: var(--section-background);
+}
+.footer .copyright > span {
+color: var(--btn-color);
+}
+.footer .copyright div span {
+    color:var(--btn-color);
+}
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.footer .facebook {
+    background-color: #0099e5;
+}
+.footer .twitter {
+    background-color: #1da1f2;
+}
+.footer .instagram {
+    background-color: #405de6;
+}
+.footer .youtube  {
+    background-color: #ff0000;
+}
+/*End Footer */
+
